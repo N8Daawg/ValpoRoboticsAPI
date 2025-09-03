@@ -6,7 +6,7 @@
 /*    Description:  file for storing Odom Sensor managment class code         */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-#include "api.h"
+#include "../../include/api.h"
 using namespace vex;
 
 sensorUnit::sensorUnit(

@@ -6,8 +6,7 @@
 /*    Description:  file for storing MOGO clamp class code                    */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-
-#include "api.h"
+#include "../../include/api.h"
 using namespace vex;
 
 clamp::clamp(digital_out* MC){

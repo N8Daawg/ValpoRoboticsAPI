@@ -6,7 +6,7 @@
 /*    Description:  file for storing twoWheelSide class code                  */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-#include "api.h"
+#include "../../include/api.h"
 using namespace vex;
 
 twoWheelSide::twoWheelSide(

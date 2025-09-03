@@ -9,13 +9,8 @@ class Robot {
     private:
         coordinate coords;
 
-        clamp* mogoClamp;
-
-        bool hooks_ManualOverride = false;
     public:
         driveTrain* driveT;
-        intake* frontIntake;
-        conveyor* hookConveyor; // for less annoying control over hook mech
 
         /**
          * @brief creates a robot object to monitor, manage, and control the robots' systems
@@ -23,10 +18,7 @@ class Robot {
          * @param dt the drive train controller
          */
         Robot(
-            driveTrain* dt,
-            clamp* MC,
-            intake* frontIntake,
-            conveyor* C
+            driveTrain* dt
         );
         
         Robot();
@@ -49,42 +41,11 @@ class Robot {
             driveT->switchControlMode();
         }
         
-        void toggle_HookManualOverride(){if(hooks_ManualOverride){hooks_ManualOverride=false;}else{hooks_ManualOverride=true;}}
 
         /**
          * @brief
          */
         int drive(double leftNS, double leftEW, double rightNS, double rightEW);
-
-
-        bool hasMogo(){
-            return mogoClamp->hasMogo();
-        }
-
-        /**
-         * @brief
-         */
-        void toggleMogoClamp();
-
-        /**
-         * @brief
-         */
-        void runIntake();
-
-        /**
-         * @brief
-         */
-        void runPureIntake();
-
-        /**
-         * @brief
-         */
-        void runReversedIntake();
-
-        /**
-         * @brief
-         */
-        void stopIntake();
 
 };
 

@@ -6,7 +6,7 @@
 /*    Description:  file for storing drivetrain class code                    */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-#include "api.h"
+#include "../../include/api.h"
 using namespace vex;
 
 driveTrain::driveTrain(){

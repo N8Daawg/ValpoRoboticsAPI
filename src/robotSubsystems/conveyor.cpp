@@ -6,8 +6,7 @@
 /*    Description:  file for storing intake class code                        */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-
-#include "api.h"
+#include "../../include/api.h"
 using namespace vex;
 
 conveyor::conveyor(motor *hookDriver, double cycle, double load) {

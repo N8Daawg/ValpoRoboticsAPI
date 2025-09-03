@@ -6,7 +6,7 @@
 /*    Description:  file for storing WheelSide class code                     */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
-#include "api.h"
+#include "../../include/api.h"
 using namespace vex;
 
 fourWheelSide::fourWheelSide(
